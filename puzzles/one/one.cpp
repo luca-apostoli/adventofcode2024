@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-#include "../utils/string_utils.h"
+#include "../../utils/string_utils.h"
 
 void part_one(std::vector<long> left, std::vector<long> right) {
     long distance = 0;

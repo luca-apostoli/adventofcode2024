@@ -15,7 +15,9 @@ link_libraries(
 add_executable(cpp
         main.cpp
         day.h
-        one/one.cpp
-        one/one.h
+        puzzles/one/one.cpp
+        puzzles/one/one.h
+        puzzles/two/two.cpp
+        puzzles/two/two.h
 )
 
