@@ -3,5 +3,6 @@
 enum Day {
     One = 1,
     Two = 2,
-    Three = 3
+    Three = 3,
+    Four = 4,
 };

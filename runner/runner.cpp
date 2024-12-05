@@ -2,11 +2,13 @@
 
 #include "runner.h"
 
+#include <iostream>
 #include "../day.h"
 #include "../puzzles/one/one.h"
-#include <iostream>
-#include "../puzzles/two/two.h"
+
+#include "../puzzles/four/four.h"
 #include "../puzzles/three/three.h"
+#include "../puzzles/two/two.h"
 
 namespace utils {
     void Runner::run(const std::vector<std::string> &input, const Day &day) noexcept {
@@ -20,6 +22,9 @@ namespace utils {
                 break;
             case Three:
                 three(input);
+                break;
+            case Four:
+                four(input);
                 break;
         }
     };

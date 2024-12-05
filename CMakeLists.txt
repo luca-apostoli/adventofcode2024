@@ -21,5 +21,9 @@ add_executable(cpp
         puzzles/two/two.h
         puzzles/three/three.cpp
         puzzles/three/three.h
+        puzzles/four/four.cpp
+        puzzles/four/four.h
+        puzzles/five/five.cpp
+        puzzles/five/five.h
 )
 
