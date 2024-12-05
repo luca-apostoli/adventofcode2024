@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "../day.h"
+#include "../puzzles/five/five.h"
 #include "../puzzles/one/one.h"
 
 #include "../puzzles/four/four.h"
@@ -25,6 +26,9 @@ namespace utils {
                 break;
             case Four:
                 four(input);
+                break;
+            case Five:
+                five(input);
                 break;
         }
     };

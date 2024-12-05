@@ -43,4 +43,19 @@ inline std::string trim_copy(std::string s) {
     return s;
 }
 
+inline std::vector<std::string> split(const std::string &line, const char &delimiter) {
+    std::vector<std::string> result;
+    std::string token;
+    for (const auto &c : line) {
+        if (c == delimiter) {
+            result.push_back(token);
+            token.clear();
+        } else {
+            token += c;
+        }
+    }
+    result.push_back(token);
+    return result;
+}
+
 }

@@ -1,5 +1,6 @@
 #include "two.h"
 
+#include "../../utils/string_utils.h"
 #include <iostream>
 #include <string>
 #include <variant>
@@ -15,28 +16,13 @@ enum Status {
     PENDING
 };
 
-std::vector<std::string> split(const std::string &line, const char &delimiter) {
-    std::vector<std::string> result;
-    std::string token;
-    for (const auto &c : line) {
-        if (c == delimiter) {
-            result.push_back(token);
-            token.clear();
-        } else {
-            token += c;
-        }
-    }
-    result.push_back(token);
-    return result;
-}
-
 void two(const std::vector<std::string> &input) {
 
     std::cout << "Day two" << std::endl;
 
     long num_valid = 0;
     for (const auto &line : input) {
-        auto parts = split(line, ' ');
+        auto parts = utils::split(line, ' ');
         std::vector<long> range = {};
         std::ranges::for_each(parts, [&range](std::string &part) {
             auto r = std::stol(part);
