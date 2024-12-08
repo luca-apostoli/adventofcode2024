@@ -6,9 +6,9 @@
 #include "../day.h"
 #include "../puzzles/five/five.h"
 #include "../puzzles/one/one.h"
-
 #include "../puzzles/four/four.h"
 #include "../puzzles/six/six.h"
+#include "../puzzles/seven/seven.h"
 #include "../puzzles/three/three.h"
 #include "../puzzles/two/two.h"
 
@@ -33,6 +33,9 @@ namespace utils {
                 break;
             case Six:
                 six(input);
+                break;
+            case Seven:
+                seven(input);
                 break;
         }
     };
