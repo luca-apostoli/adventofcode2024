@@ -4,14 +4,15 @@
 
 #include <iostream>
 #include "../day.h"
+#include "../puzzles/eight/eight.h"
 #include "../puzzles/five/five.h"
-#include "../puzzles/one/one.h"
 #include "../puzzles/four/four.h"
-#include "../puzzles/six/six.h"
+#include "../puzzles/nine/nine.h"
+#include "../puzzles/one/one.h"
 #include "../puzzles/seven/seven.h"
+#include "../puzzles/six/six.h"
 #include "../puzzles/three/three.h"
 #include "../puzzles/two/two.h"
-#include "../puzzles/eight/eight.h"
 
 namespace utils {
     void Runner::run(const std::vector<std::string> &input, const Day &day) noexcept {
@@ -40,6 +41,9 @@ namespace utils {
                 break;
             case Eight:
                 eight(input);
+                break;
+            case Nine:
+                nine(input);
                 break;
         }
     };

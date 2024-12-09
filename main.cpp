@@ -6,7 +6,7 @@
 #include "day.h"
 
 
-const Day selected_day = Eight;
+const Day selected_day = Nine;
 
 namespace {
     std::string getFileName(const Day &selected_day) noexcept {
