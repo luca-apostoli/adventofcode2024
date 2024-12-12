@@ -35,5 +35,7 @@ add_executable(cpp
         puzzles/nine/nine.h
         puzzles/ten/ten.cpp
         puzzles/ten/ten.h
+        puzzles/eleven/eleven.cpp
+        puzzles/eleven/eleven.h
 )
 

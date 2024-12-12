@@ -14,6 +14,7 @@
 #include "../puzzles/three/three.h"
 #include "../puzzles/two/two.h"
 #include "../puzzles/ten/ten.h"
+#include "../puzzles/eleven/eleven.h"
 
 namespace utils {
     void Runner::run(const std::vector<std::string> &input, const Day &day) noexcept {
@@ -48,6 +49,9 @@ namespace utils {
                 break;
             case Ten:
                 ten(input);
+                break;
+            case Eleven:
+                eleven(input);
                 break;
         }
     };

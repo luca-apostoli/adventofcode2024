@@ -11,4 +11,5 @@ enum Day {
     Eight = 8,
     Nine = 9,
     Ten = 10,
+    Eleven = 11,
 };
